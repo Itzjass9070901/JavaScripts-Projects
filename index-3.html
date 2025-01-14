@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Length Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Length Unit Converter</h1>
+        <div class="input-group">
+            <label for="inputValue">Enter Value:</label>
+            <input type="number" id="inputValue" placeholder="Enter a number">
+        </div>
+        <div class="input-group">
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="centimeters">Centimeters</option>
+                <option value="feet">Feet</option>
+                <option value="inches">Inches</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="centimeters">Centimeters</option>
+                <option value="feet">Feet</option>
+                <option value="inches">Inches</option>
+            </select>
+        </div>
+        <button onclick="convert()">Convert</button>
+        <div id="result"></div>
+    </div>
+
+
+ <script src="metric.js"></script>
+</body>
+</html>
